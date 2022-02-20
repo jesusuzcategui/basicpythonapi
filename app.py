@@ -10,5 +10,5 @@ def approute():
     return "ready"
 
 app.register_blueprint(user_bp, url_prefix="/v1/users")
-
+app.debug = True
 app.run(host="0.0.0.0", port=27032)
